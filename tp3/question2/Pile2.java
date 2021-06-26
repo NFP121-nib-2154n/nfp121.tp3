@@ -78,7 +78,8 @@ public class Pile2 implements PileI {
         StringBuffer sb = new StringBuffer("[");
         for (int i = stk.size() - 1; i >= 0; i--) {
             Object[]tab=stk.toArray();
-            sb.append(tab[i].toString());
+            if(tab[i] != "")
+                sb.append(tab[i].toString());
             if (i > 0)
                 sb.append(", ");
         }
