@@ -6,10 +6,10 @@ import question1.PileVideException;
 import java.util.Vector;
 
 /**
- * Décrivez votre classe PileVector ici.
+ * DÃ©crivez votre classe PileVector ici.
  * 
  * @author (votre nom)
- * @version (un numéro de version ou une date)
+ * @version (un numÃ©ro de version ou une date)
  */
 public class Pile3 implements PileI {
 
@@ -62,7 +62,8 @@ public class Pile3 implements PileI {
         StringBuffer sb = new StringBuffer("[");
         for (int i = v.size() - 1; i >= 0; i--) {
             Object[]tab=v.toArray();
-            sb.append(tab[i].toString());
+	    if(tab[i] != "")		
+            	sb.append(tab[i].toString());
             if (i > 0)
                 sb.append(", ");
         }
