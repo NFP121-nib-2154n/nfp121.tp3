@@ -8,13 +8,13 @@ import java.util.Stack;
 public class Pile4 implements PileI, Cloneable {
 	/** la liste des Maillons/Elements */
 	private Maillon stk;
-	/** la capacité de la pile */
+	/** la capacitÃ© de la pile */
 	private int capacite;
 	/** le nombre */
 	private int nombre;
 
 	/**
-	 * Classe interne "statique" contenant chaque élément de la chaine c'est une
+	 * Classe interne "statique" contenant chaque Ã©lÃ©ment de la chaine c'est une
 	 * proposition, vous pouvez l'ignorer !
 	 */
 	private static class Maillon implements Cloneable {
@@ -42,10 +42,10 @@ public class Pile4 implements PileI, Cloneable {
 	}
 
 	/**
-	 * Création d'une pile.
+	 * CrÃ©ation d'une pile.
 	 * 
 	 * @param taille
-	 *            la taille de la pile, la taille doit être > 0
+	 *            la taille de la pile, la taille doit Ãªtre > 0
 	 */
 	public Pile4(int taille) {
 		if (taille <= 0)
@@ -84,7 +84,7 @@ public class Pile4 implements PileI, Cloneable {
 	}
 
 	/**
-	 * Effectue un test de l'état de la pile.
+	 * Effectue un test de l'Ã©tat de la pile.
 	 * 
 	 * @return vrai si la pile est vide, faux autrement
 	 */
@@ -93,7 +93,7 @@ public class Pile4 implements PileI, Cloneable {
 	}
 
 	/**
-	 * Effectue un test de l'état de la pile.
+	 * Effectue un test de l'Ã©tat de la pile.
 	 * 
 	 * @return vrai si la pile est pleine, faux autrement
 	 */
@@ -102,10 +102,10 @@ public class Pile4 implements PileI, Cloneable {
 	}
 
 	/**
-	 * Retourne une représentation en String d'une pile, contenant la
-	 * représentation en String de chaque élément.
+	 * Retourne une reprÃ©sentation en String d'une pile, contenant la
+	 * reprÃ©sentation en String de chaque Ã©lÃ©ment.
 	 * 
-	 * @return une représentation en String d'une pile
+	 * @return une reprÃ©sentation en String d'une pile
 	 */
 	public String toString() {
 
@@ -161,11 +161,6 @@ public class Pile4 implements PileI, Cloneable {
                 equals = false;
                 if(this.sommet() == null){
                     if(pile.sommet() == null) {
-                        equals = true;
-                    }
-                }
-                else if(pile.sommet() == null){
-                    if(this.sommet() == null) {
                         equals = true;
                     }
                 }
